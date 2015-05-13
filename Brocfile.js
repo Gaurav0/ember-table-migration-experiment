@@ -17,4 +17,11 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+app.import('bower_components/antiscroll/antiscroll.css');
+app.import('bower_components/antiscroll/antiscroll.js');
+app.import('bower_components/jquery-ui/jquery-ui.js');
+app.import('bower_components/jquery-mousewheel/jquery.mousewheel.js');
+app.import('vendor/ember-table/ember-table.css');
+app.import('vendor/ember-table/ember-table.js');
+
 module.exports = app.toTree();

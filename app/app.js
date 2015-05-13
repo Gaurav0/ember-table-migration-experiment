@@ -2,6 +2,7 @@ import Ember from 'ember';
 import Resolver from 'ember/resolver';
 import loadInitializers from 'ember/load-initializers';
 import config from './config/environment';
+import './ember-table-shim';
 
 var App;
 
@@ -14,7 +15,5 @@ App = Ember.Application.extend({
 });
 
 loadInitializers(App, config.modulePrefix);
-
-Ember.deprecate = function() {};
 
 export default App;
